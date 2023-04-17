@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Screenshot 2023-03-09 220633.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>P.C.P Dessert</title>
+</head>
+<body align="center">
+    <div class="about" id="about">
+        <button id="backPage"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="picPart">
+            <img src="pic.png"><img src="pic1.png" alt=""><img src="pic2.png" alt="">
+        </div>
+        <br><br>
+        <p><span>1. Do you provide delivery service?</span><br>
+        Yes we do provide delivery service by car around KL and Selangor. Delivery rates are charged accordingly via #rd party delivery service.
+        <br><br>
+        <span>2. Do you make surprise delivery?</span><br>
+        Strictly no! To avoid any inconvenience, kindly please inform the recipient. If the recipient isn't home the driver will send the pastries back to our store.
+        <li>Buyer or receiver will need to arrange a pickup from our store after the cake is sent back to us.</li>
+        <li>We do not promise, nor do we take any responsibility on the freshness of the pastries after that.</li>
+        <br><br>
+        <span>3. Can I choose the delivery time?</span><br>
+        Yes, you can select the time slot of :-
+        <br>
+        <li>11am - 2pm</li>
+        <li>4pm - 6.30pm</li>
+        <br><br>
+        <span>4. Can I request for a specific delivery time?</span><br>
+        Sorry, we cannot arrange delivery at a specifically requested time as we cannot predict traffic conditions or potential unforeseen circumstances.
+        <br><br><br>
+        <span>5. How do I receive the delivery update?</span><br>
+        We will notify the recipient shortly before the delivery time slot on the day your order is due for delivery.
+        <br><br><br>
+        <span>6. Can you delivery to my unit? Or to the shop/restaurant inside malls/hotels?</span><br>
+        Delivering to high-rise buildings (apartments, condominiums, malls, restaurants, hotels, hospitals, etc.) is not part of our delivery partner's services. The driver will pass the cake(s) to the recipient ONLY at the drop-off point or lobby of such buildings.
+        </p>
+    </div>
+    <div class="back" id="back">
+        <img class="logo" src="113363639_padded_logo-removebg-preview.png" id="logo">
+        <h1>WELCOME To <br><span>P.C.P Dessert</span></h1>
+        <br><br><br>
+        <button id="next">NEXT</button>
+    </div>
+    <video autoplay loop muted plays-inline class="vid" id="vid">
+        <source src="Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+    </video>
+    <button class="login" id="login">Log In</button>
+    <p id="name"></p>
+    <div class="top" id="top">
+        <div class="navbar">
+            <li><a class="link1" href="#">HOME</a></li><p>|</p>
+            <li><a class="link2" href="#menu">MENU</a></li><p>|</p>
+            <li><a class="link3" id="aboutPage" href="#about">ABOUT US</a></li><p>|</p>
+            <li><a class="link4" href="#footer">CONTACT US</a></li>
+        </div>
+    </div>
+
+    <div class="back1" id="back1">
+        <div class="cartPart" id="menu">
+            <h2><u>M</u> <u>E</u> <u>N</u> <u>U</u></h2>
+            <button class="list" onclick="window.location.href = '#listOrder';">List</button>
+            <div class="menu">
+                <div class="productsPart">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="listOrder" id="listOrder">
+        <h2><u>C</u> <u>A</u> <u>R</u> <u>T</u></h2>
+        <button class="confirm" onclick="window.location.href = '#payment';">Confirm Order</button>
+        <button class="goBack" onclick="window.location.href = '#menu';">Back to MENU</button>
+        <br><br><br>
+        <div class="list">
+            <div class="top">
+                <p>ITEMS : <p class="cart-items"></p></p>
+                <p>Total Price : <p class="cart-total"></p></p>
+            </div>
+            <div class="listPart">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="feedBack" id="feedBackPart">
+        <button class="create" id="create">CREATE MINE</button>
+        <div class="form" id="form">
+            <h2><u>MESSAGE</u></h2>
+            <br><br>
+            <textarea name="feedBack" id="feedBack" cols="50" rows="30"></textarea>
+            <br>
+            <label >RATE OUR SERVICES : </label><input type="number" name="stars" id="stars" min="0" max="5"> / 5
+            <button id="send" onclick="return sendMessage();">SEND</button>
+            <button id="cancel">CANCEL</button>
+        </div>
+        <h2><u>F</u> <u>E</u> <u>E</u> <u>D</u> <u>B</u> <u>A</u> <u>C</u> <u>K</u></h2>
+        <div class="customerFeed" id="customerFeed">
+
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="contactUs">
+            <p>
+                <span class="span1">P.C.P Dessert</span>
+                <br>
+                <br>
+                HQ No. : <span class="span2">017-906 9607</span>
+                <br>
+                Customer Service : <span class="span2">03-4233 2321</span>
+                <br>
+                <br>
+                <span class="span3">MEDIA SOCIAL</span>
+                <br>
+                <br>
+                Instagram : <a href="https://www.instagram.com/poppycherrypop/">Click Here</a>
+                <br>
+                Facebook : <a href="https://www.facebook.com/profile.php?id=100070003956258">Click Here</a>
+            </p>
+        </div>
+        <div class="tablePart">
+            <h3>HELPs</h3>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td class="col1">Email address :</td>
+                        <td class="col2"><input placeholder="Email" type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Message :</td>
+                        <td class="col2"><textarea placeholder="Message" id="message" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><button class="submitBtn" id="submitBtn">SUBMIT</button></th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="aboutUs" id="aboutUs">
+        <div class="elements">
+            <h2><u>M</u> <u>A</u> <u>P</u> <u>S</u></h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7967.947852669485!2d101.70396756977539!3d3.101586100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc355c2881a597%3A0x4a40a7a3bfd17f30!2sB%20Cafe%20International%20-%20Bandar%20Sri%20Permaisuri!5e0!3m2!1sen!2smy!4v1679890964698!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    <div class="payment" id="payment">
+        <div class="paymentTitle">
+            <h2><u>P</u> <u>A</u> <u>Y</u> <u>M</u> <u>E</u> <u>N</u> <u>T</u></h2>
+        </div>
+        <div class="paymentTable">
+            <h3><span>Haxel.</span>PAY</h3>
+            <table>
+                <tr>
+                    <td class="col1">Cardholder Name</td>
+                    <td class="col2">:</td>
+                    <td class="col3"><input type="text" name="cardName" id="cardName"></td>
+                    <th rowspan="2"><img class="qrCode" alt="qrCode"></th>
+                </tr>
+                <tr>
+                    <td>Card No.</td>
+                    <td>:</td>
+                    <td><input type="text" name="cardNo" id="cardNo" placeholder="---- ---- ---- ----"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th colspan="4"><button class="confirmBtn" id="confirmBtn">Confirm</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="bottomPart1" id="bottomPart1">
+        <div class="part1">
+            <img src="113363639_padded_logo-removebg-preview.png">
+            <p class="para1">
+                <a href="#logo">HOME</a>
+                |
+                <a href="#footer">ABOUT US</a>
+                |
+                <a href="#footer">CONTACT US</a>
+            </p>
+            <p class="para2">Copyright &copy; 2023 <span><a href="https://www.facebook.com/profile.php?id=100070003956258">P.C.P Dessert</a> </span> All rights reserved</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+    <!-- include firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        document.getElementById('backPage').addEventListener('click', backPage);
+        function backPage(){
+            document.getElementById('top').style.display = "block";
+            document.getElementById('menu').style.display = "block";
+            document.getElementById('listOrder').style.display = "block";
+            document.getElementById('feedBackPart').style.display = "block";
+            document.getElementById('footer').style.display = "flex";
+            document.getElementById('aboutUs').style.display = "block";
+            document.getElementById('payment').style.display = "block";
+            document.getElementById('bottomPart1').style.display = "block";
+            document.getElementById('back').style.display = "none";
+            document.getElementById('name').style.display = "block";
+            document.getElementById('login').style.display = "block";
+            document.getElementById('about').style.display = "none";
+            document.getElementById('vid').style.display = "block";
+        }
+
+        document.getElementById('aboutPage').addEventListener('click', about);
+        function about(){
+            document.getElementById('top').style.display = "none";
+            document.getElementById('menu').style.display = "none";
+            document.getElementById('listOrder').style.display = "none";
+            document.getElementById('feedBackPart').style.display = "none";
+            document.getElementById('footer').style.display = "none";
+            document.getElementById('aboutUs').style.display = "none";
+            document.getElementById('payment').style.display = "none";
+            document.getElementById('name').style.display = "none";
+            document.getElementById('login').style.display = "none";
+            document.getElementById('about').style.display = "block";
+            document.getElementById('vid').style.display = "none";
+        }
+        document.getElementById('next').addEventListener('click', next);
+        function next(){
+            document.getElementById('top').style.display = "block";
+            document.getElementById('menu').style.display = "block";
+            document.getElementById('listOrder').style.display = "block";
+            document.getElementById('feedBackPart').style.display = "block";
+            document.getElementById('footer').style.display = "flex";
+            document.getElementById('aboutUs').style.display = "block";
+            document.getElementById('payment').style.display = "block";
+            document.getElementById('bottomPart1').style.display = "block";
+            document.getElementById('back').style.display = "none";
+            document.getElementById('name').style.display = "block";
+            document.getElementById('login').style.display = "block";
+            window.location.href = "#top";
+        }
+        const username = localStorage.getItem('username');
+
+        document.getElementById('submitBtn').addEventListener('click', (e)=>{
+            e.preventDefault()
+
+            if(username == null){
+                alert ("You must login first!!! Thank you :)");
+                window.location.href = "loginPage.html";
+            }
+            else{
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+                var subject = "HELP";
+                var body = 'Name : '+username + '<br>Email : '+email + '<br>Message : '+message;
+                Email.send({
+                    SecureToken : "5b3bbe84-9a5d-42f5-8bf1-59ebf900f4c9",
+                    To : 'hassanhazril@gmail.com',
+                    From : "hassanhazril@gmail.com",
+                    Subject : subject,
+                    Body : body
+                }).then(
+                    message => alert("Messsage send Successful!!!")
+                );
+            }
+        });
+        
+        document.getElementById('login').addEventListener('click', login);
+
+        function login(){
+            window.location.href = "loginPage.html";
+        }
+
+        if(username == null){
+            document.getElementById('name').innerText = "WELCOME ---";
+        }
+        else{
+            document.getElementById('name').innerHTML = "<span style='color: purple;'>WELCOME </span>"+ username;
+            document.getElementById('login').innerText = "Log Out";
+            document.getElementById('login').addEventListener('click', logout);
+
+            function logout(){
+                localStorage.removeItem('username');
+                document.getElementById('login').innerText = "Log In";
+                alert ("Log Out Successful!!!");
+                
+                document.getElementById('login').addEventListener('click', loginBfr);
+
+                function loginBfr(){
+                    window.location.href = "loginPage.html";
+                }
+            }
+        }
+
+        document.getElementById('confirmBtn').addEventListener('click', () => {
+
+            if(username == null){
+                alert ("You must login first!!! Thank you :)");
+                window.location.href = "loginPage.html";
+            }else{
+                let guid = () => {
+            let s4 = () => {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                    .toString(16)
+                    .substring(1);
+                }
+                //return id of format 'aaaaaaaa'-'aaaa'-'aaaa'-'aaaa'-'aaaaaaaaaaaa'
+                return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+            }
+
+            document.querySelector('.qrCode').src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${guid()}`;
+            alert ("Thank You for your purchases!!! Hope our KEREPEK make your day more BETTER!!! :) <3")
+            }
+            
+        });
+
+
+        document.getElementById('create').addEventListener('click', form);
+
+        function form(){
+            document.getElementById('form').style.display = "block";
+        }
+
+        document.getElementById('cancel').addEventListener('click', cancel);
+
+        function cancel(){
+            document.getElementById('form').style.display = "none";
+        }
+
+        document.getElementById('send').addEventListener('click', off);
+
+        function off(){
+            document.getElementById('form').style.display = "none";
+            document.getElementById('send').disabled = true;
+        }
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAEPhCxE9QHQTm-Gx4awLAqywwZ_5RogZA",
+  authDomain: "feedback-d41b5.firebaseapp.com",
+  databaseURL: "https://feedback-d41b5-default-rtdb.firebaseio.com",
+  projectId: "feedback-d41b5",
+  storageBucket: "feedback-d41b5.appspot.com",
+  messagingSenderId: "305538852222",
+  appId: "1:305538852222:web:4de2af14683ca43190bf2f"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+
+
+      function sendMessage() {
+		// get message
+
+        if(username == null){
+            alert ("You must login first!!!");
+            return true;
+        }else{
+            var message = document.getElementById("feedBack").value;
+            let date = new Date();
+
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+
+            var times = AMPM(hours, minutes);
+    
+		    // save in database
+            firebase.database().ref("feedBacks").push().set({
+			    "sender": username,
+                "stars": document.getElementById('stars').value,
+			    "message": message,
+                "time": times
+		    });
+
+            document.getElementById('feedBacks').value = "";
+
+		    // prevent form from submitting
+		    return false;
+        }
+	}
+
+  function AMPM(hour, min){
+    let ampm = hour >= 12 && hour < 24 ? 'p.m' : 'a.m';
+    let timeS = hour % 12;
+    timeS = timeS ? timeS : 12;
+
+    var time = timeS + ":" + min + " " + ampm;
+    return time;
+  }
+
+      // listen for incoming messages
+	firebase.database().ref("feedBacks").on("child_added", function (snapshot) {
+		var html = "";
+		// give each message a unique ID
+		
+      html += "<div align='left' id='messagePart'><div align='left' class='accepted' id='message-" + snapshot.key + "'>";
+      html += "<p><span>" +snapshot.val().sender + " :<br></span> " + snapshot.val().message +"</p>";
+      html +=  "<br>"+"<div class='bottomPartAccepted' >"+ snapshot.val().time +"</div>";
+      html += "</div>"
+      if(snapshot.val().stars == 0){
+        html += "<div class='star'><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i></div>"
+      }
+      if(snapshot.val().stars == 1){
+        html += "<div class='star'><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i></div>"
+      }
+      if(snapshot.val().stars == 2){
+        html += "<div class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i></div>"
+      }
+      if(snapshot.val().stars == 3){
+        html += "<div class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i><i class='fa-regular fa-star'></i></div>"
+      }
+      if(snapshot.val().stars == 4){
+        html += "<div class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></div>"
+      }
+      if(snapshot.val().stars == 5){
+        html += "<div class='star'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i></div>"
+      }
+      html += "</div><br>";
+    
+
+		document.getElementById("customerFeed").innerHTML += html;
+	});
+
+  </script>
+</body>
+</html>

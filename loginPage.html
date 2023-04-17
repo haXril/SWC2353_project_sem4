@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Screenshot 2023-03-09 220633.png">
+    <link rel="stylesheet" href="loginPage.css">
+    <title>P.C.P Dessert</title>
+</head>
+<body>
+    <div class="backframe" align="center">
+        <div class="layer1">
+            <div class="loginPart" align="center">
+                <img src="113363639_padded_logo-removebg-preview.png" alt="">
+                <p class="login"><u>&nbsp;&nbsp;LOGIN&nbsp;&nbsp;</u></p>
+                <div class="loginPart2">
+                    <table>
+                        <tr>
+                            <td class="col1">Username</td>
+                            <td class="col2">:</td>
+                            <td class="col3"><input type="text" name="username" id="username"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Password</td>
+                            <td class="col2">:</td>
+                            <td class="col3"><input type="password" name="password" id="password"></td>
+                        </tr>
+                        <tr class="row3">
+                            <th colspan="3">
+                                <button class="loginBtn" id="login">LOGIN</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="resetBtn" type="reset" onclick="window.location.href = 'index.html';">CANCEL</button>
+                            </th>
+                        </tr>
+                    </table>
+                    <p class="register">Don't have an account? <a href="register.html" class="registerLink">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('click', nextPage);
+
+        function nextPage(){
+
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            if(username == ""){
+                alert ("You forgot to enter your username!!!");
+            }
+            else if(password == ""){
+                alert ("You forgot to enter your password!!!");
+            }
+            else{
+                alert ("Login Successful!!!")
+                localStorage.setItem('username', username);
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

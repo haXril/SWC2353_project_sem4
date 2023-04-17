@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Screenshot 2023-03-09 220633.png">
+    <link rel="stylesheet" href="register.css">
+    <title>P.C.P Dessert</title>
+</head>
+<body>
+    <div class="backframe" align="center">
+        <div class="layer1">
+            <div class="loginPart" align="center">
+                <img src="113363639_padded_logo-removebg-preview.png">
+                <p class="login"><u>&nbsp;&nbsp;REGISTER&nbsp;&nbsp;</u></p>
+                <div class="loginPart2">
+                    <table>
+                        <tr>
+                            <td class="col1">First Name</td>
+                            <td class="col2">:</td>
+                            <td class="col3"><input type="text" name="firstName" id="firstName"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Last Name</td>
+                            <td class="col2">:</td>
+                            <td class="col3"><input type="text" name="lastName" id="lastName"></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Address</td>
+                            <td class="col2">:</td>
+                            <td class="col3"><textarea type="textarea" name="address" id="address" cols="33" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Password</td>
+                            <td class="col2">:</td>
+                            <td class="col3"><input type="password" name="password" id="password"></td>
+                        </tr>
+                        <tr class="row3">
+                            <th colspan="3">
+                                <button class="loginBtn" id="register">REGISTER</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="resetBtn" type="reset" onclick="window.location.href = 'loginPage.html';">CANCEL</button>
+                            </th>
+                        </tr>
+                    </table>
+                    <p class="register">Already have a account? <a href="loginPage.html" class="registerLink">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('register').addEventListener('click', nextPage);
+
+        function nextPage(){
+
+            let username = document.getElementById('firstName').value +" " + document.getElementById('lastName').value;
+            let password = document.getElementById('password').value;
+            let address = document.getElementById('address').value;
+
+            if(document.getElementById('firstName').value == "" && document.getElementById('lastName').value == ""){
+                alert ("You forgot to enter your fisrt name and last name!!!");
+            }
+            else if(password == ""){
+                alert ("You forgot to enter your password!!!");
+            }
+            else if(address == ""){
+                alert ("You forgot to enter your address!!!");
+            }
+            else{
+                alert ("Register Successful!!!")
+                localStorage.setItem('username', username);
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>
