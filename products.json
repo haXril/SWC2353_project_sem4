@@ -63,6 +63,14 @@
         "price": 15.00,
         "image": { "fields": { "file": { "url": "dessert8.png" } } }
       }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Apple and Butterscotch pie",
+        "price": 30.00,
+        "image": { "fields": { "file": { "url": "dessert1.png" } } }
+      }
     }
   ]
 }
